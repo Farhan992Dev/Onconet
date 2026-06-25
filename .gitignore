@@ -100,3 +100,7 @@ pnpm-debug.log*
 ### IDE
 .idea/
 *.rsuser
+
+### Internal security notes (not for repo)
+SECURITY-TODO.md
+OWASP-ASSESSMENT.md

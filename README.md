@@ -21,7 +21,7 @@ See [features/README.md](features/README.md) for the full feature list and speci
 | Frontend | Next.js 15, React 19, TypeScript, Tailwind CSS |
 | Backend API | ASP.NET Core 8 (.NET 8) |
 | Database | MySQL (Entity Framework Core + Pomelo) |
-| Cache | Redis (OTP and session caching) |
+| Cache | In-memory (`IMemoryCache`, used for OTP caching) |
 | Auth | JWT Bearer tokens |
 | SMS | Kavenegar |
 | Go service | Go 1.25 (early-stage API scaffold in `go/`) |
@@ -44,7 +44,6 @@ Onconet/
 - **Node.js** 18+ (for the frontend)
 - **.NET SDK** 8.0 (for the backend)
 - **MySQL** 8+
-- **Redis** (for OTP caching)
 - **Go** 1.25+ (optional, only if working on `go/`)
 
 ## Getting Started
@@ -56,8 +55,7 @@ Onconet/
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "server=localhost;port=3306;database=onconet;user=root;password=YOUR_PASSWORD;",
-    "RedisConnection": "localhost:6379"
+    "DefaultConnection": "server=localhost;port=3306;database=onconet;user=root;password=YOUR_PASSWORD;"
   },
   "JwtSettings": {
     "Secret": "YourSecretKeyAtLeast32CharactersLong!",
