@@ -1,0 +1,6 @@
+{
+  "name": "Pink Breast Health Link",
+  "description": "سامانه جامع خودمراقبتی، مقالات تخصصی و پورتال هوشمند ارزیابی سلامت پستان (صورتی)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
